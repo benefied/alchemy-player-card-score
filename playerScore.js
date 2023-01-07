@@ -4,7 +4,8 @@ function playerHandScore(hand) {
         "Q": 3,
         "J": 2
     }
-
+    
+    //.split used to split the joint strings into array-type
     const handArr = hand.split("");
     let sum = 0;
     for(let i = 0; i < handArr.length; i++) {
@@ -12,6 +13,7 @@ function playerHandScore(hand) {
         sum += score;
     }
 
+     //the amount of K,Q or J determine the player hand score 
     return sum;
 }
 
